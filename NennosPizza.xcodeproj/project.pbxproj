@@ -1,0 +1,747 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A6BC68119D04E83275B8D57 /* Pods_NennosPizza.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADAE40AE3AAA512A099FECAA /* Pods_NennosPizza.framework */; };
+		6D30ABAB272EA0BB0017045B /* CartTotalCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D30ABAA272EA0BB0017045B /* CartTotalCellViewModel.swift */; };
+		6D30ABAD272EAA480017045B /* CartTotalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D30ABAC272EAA480017045B /* CartTotalCell.swift */; };
+		6D88E4A427203A8C00925AA6 /* IngridientsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D88E4A327203A8C00925AA6 /* IngridientsHeaderView.swift */; };
+		6D88E4CB2721E7FE00925AA6 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D88E4CA2721E7FE00925AA6 /* CartViewController.swift */; };
+		6D88E4CE2721F5E500925AA6 /* DrinksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D88E4CD2721F5E500925AA6 /* DrinksViewController.swift */; };
+		6D88E4D02722018800925AA6 /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D88E4CF2722018800925AA6 /* CartViewModel.swift */; };
+		6D88E4D2272207D000925AA6 /* DrinksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D88E4D1272207D000925AA6 /* DrinksViewModel.swift */; };
+		6D88E4D42722098700925AA6 /* DrinkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D88E4D32722098700925AA6 /* DrinkCell.swift */; };
+		6D88E4D627229D3F00925AA6 /* CartService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D88E4D527229D3F00925AA6 /* CartService.swift */; };
+		6D88E4DA27229EFF00925AA6 /* PizzaObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D88E4D927229EFF00925AA6 /* PizzaObject.swift */; };
+		6D88E4DC2722A01C00925AA6 /* DrinkObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D88E4DB2722A01C00925AA6 /* DrinkObject.swift */; };
+		6D88E4DE2722A25900925AA6 /* CartRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D88E4DD2722A25900925AA6 /* CartRepository.swift */; };
+		6D88E4E02722A64400925AA6 /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D88E4DF2722A64400925AA6 /* RealmService.swift */; };
+		6D88E4E22722A7C100925AA6 /* CartObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D88E4E12722A7C100925AA6 /* CartObject.swift */; };
+		6D88E4E427248DBB00925AA6 /* CartItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D88E4E327248DBB00925AA6 /* CartItemCell.swift */; };
+		6D88E4E72724ADF500925AA6 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D88E4E62724ADF500925AA6 /* ItemCell.swift */; };
+		6D88E4E92726A6FD00925AA6 /* DrinkCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D88E4E82726A6FD00925AA6 /* DrinkCellViewModel.swift */; };
+		6D88E4EB2726AFB300925AA6 /* CartItemCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D88E4EA2726AFB300925AA6 /* CartItemCellViewModel.swift */; };
+		6DA0529C271990E100CF0BA2 /* PizzaDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA0529B271990E100CF0BA2 /* PizzaDetailsViewController.swift */; };
+		6DA0529E2719919600CF0BA2 /* PizzaDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA0529D2719919600CF0BA2 /* PizzaDetailsViewModel.swift */; };
+		6DA052A0271AA38500CF0BA2 /* PizzaIngridientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA0529F271AA38500CF0BA2 /* PizzaIngridientCell.swift */; };
+		6DD88C9E271AAC1C00782CD0 /* PizzaIngrideintViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD88C9D271AAC1C00782CD0 /* PizzaIngrideintViewModel.swift */; };
+		6DD88CA0271AD91400782CD0 /* PizzaImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD88C9F271AD91400782CD0 /* PizzaImageCell.swift */; };
+		6DEF2BCA2714820A00C841AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEF2BC92714820A00C841AA /* AppDelegate.swift */; };
+		6DEF2BCC2714820A00C841AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEF2BCB2714820A00C841AA /* SceneDelegate.swift */; };
+		6DEF2BD32714820E00C841AA /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DEF2BD22714820E00C841AA /* Image.xcassets */; };
+		6DEF2BD62714820E00C841AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DEF2BD42714820E00C841AA /* LaunchScreen.storyboard */; };
+		6DEF2BE12714971400C841AA /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEF2BE02714971400C841AA /* AppCoordinator.swift */; };
+		6DEF2BE4271499F800C841AA /* PizzasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEF2BE3271499F800C841AA /* PizzasViewController.swift */; };
+		6DEF2BE92714A47800C841AA /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEF2BE72714A47800C841AA /* Assets.swift */; };
+		6DEF2BEA2714A47800C841AA /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEF2BE82714A47800C841AA /* Strings.swift */; };
+		6DEF2BEF2714A93B00C841AA /* Localization.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6DEF2BED2714A93B00C841AA /* Localization.strings */; };
+		6DEF2BF92714BB0000C841AA /* NSLayoutConstraint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEF2BF82714BB0000C841AA /* NSLayoutConstraint+Extensions.swift */; };
+		6DEF2BFB2714BBF800C841AA /* PizzasViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEF2BFA2714BBF800C841AA /* PizzasViewModel.swift */; };
+		6DEF2BFF2714CB7C00C841AA /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DEF2BFE2714CB7C00C841AA /* Color.xcassets */; };
+		6DEF2C022714CF6000C841AA /* Ingridient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEF2C012714CF6000C841AA /* Ingridient.swift */; };
+		6DEF2C042714CF9C00C841AA /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEF2C032714CF9C00C841AA /* Drink.swift */; };
+		6DEF2C072714CFBC00C841AA /* Pizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEF2C062714CFBC00C841AA /* Pizza.swift */; };
+		6DEF2C092714D07100C841AA /* PizzaResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEF2C082714D07100C841AA /* PizzaResponse.swift */; };
+		6DEF2C0E271575D700C841AA /* PizzaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEF2C0D271575D700C841AA /* PizzaService.swift */; };
+		6DEF2C1027157F2E00C841AA /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEF2C0F27157F2E00C841AA /* Cart.swift */; };
+		6DEF2C142715905400C841AA /* Resolver+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEF2C132715905400C841AA /* Resolver+Extensions.swift */; };
+		6DEF2C16271597D600C841AA /* PizzaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEF2C15271597D600C841AA /* PizzaCell.swift */; };
+		6DEF2C1827159A6B00C841AA /* PizzaCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEF2C1727159A6B00C841AA /* PizzaCellViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6D30ABAA272EA0BB0017045B /* CartTotalCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTotalCellViewModel.swift; sourceTree = "<group>"; };
+		6D30ABAC272EAA480017045B /* CartTotalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTotalCell.swift; sourceTree = "<group>"; };
+		6D88E4A327203A8C00925AA6 /* IngridientsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngridientsHeaderView.swift; sourceTree = "<group>"; };
+		6D88E4CA2721E7FE00925AA6 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		6D88E4CD2721F5E500925AA6 /* DrinksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksViewController.swift; sourceTree = "<group>"; };
+		6D88E4CF2722018800925AA6 /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
+		6D88E4D1272207D000925AA6 /* DrinksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksViewModel.swift; sourceTree = "<group>"; };
+		6D88E4D32722098700925AA6 /* DrinkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkCell.swift; sourceTree = "<group>"; };
+		6D88E4D527229D3F00925AA6 /* CartService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartService.swift; sourceTree = "<group>"; };
+		6D88E4D927229EFF00925AA6 /* PizzaObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaObject.swift; sourceTree = "<group>"; };
+		6D88E4DB2722A01C00925AA6 /* DrinkObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkObject.swift; sourceTree = "<group>"; };
+		6D88E4DD2722A25900925AA6 /* CartRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartRepository.swift; sourceTree = "<group>"; };
+		6D88E4DF2722A64400925AA6 /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
+		6D88E4E12722A7C100925AA6 /* CartObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartObject.swift; sourceTree = "<group>"; };
+		6D88E4E327248DBB00925AA6 /* CartItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItemCell.swift; sourceTree = "<group>"; };
+		6D88E4E62724ADF500925AA6 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		6D88E4E82726A6FD00925AA6 /* DrinkCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkCellViewModel.swift; sourceTree = "<group>"; };
+		6D88E4EA2726AFB300925AA6 /* CartItemCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItemCellViewModel.swift; sourceTree = "<group>"; };
+		6DA0529B271990E100CF0BA2 /* PizzaDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaDetailsViewController.swift; sourceTree = "<group>"; };
+		6DA0529D2719919600CF0BA2 /* PizzaDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaDetailsViewModel.swift; sourceTree = "<group>"; };
+		6DA0529F271AA38500CF0BA2 /* PizzaIngridientCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaIngridientCell.swift; sourceTree = "<group>"; };
+		6DD88C9D271AAC1C00782CD0 /* PizzaIngrideintViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaIngrideintViewModel.swift; sourceTree = "<group>"; };
+		6DD88C9F271AD91400782CD0 /* PizzaImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaImageCell.swift; sourceTree = "<group>"; };
+		6DEF2BC62714820A00C841AA /* NennosPizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NennosPizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DEF2BC92714820A00C841AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6DEF2BCB2714820A00C841AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6DEF2BD22714820E00C841AA /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
+		6DEF2BD52714820E00C841AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6DEF2BD72714820E00C841AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DEF2BE02714971400C841AA /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		6DEF2BE3271499F800C841AA /* PizzasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzasViewController.swift; sourceTree = "<group>"; };
+		6DEF2BE72714A47800C841AA /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		6DEF2BE82714A47800C841AA /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		6DEF2BEE2714A93B00C841AA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localization.strings; sourceTree = "<group>"; };
+		6DEF2BF42714AD8200C841AA /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		6DEF2BF82714BB0000C841AA /* NSLayoutConstraint+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Extensions.swift"; sourceTree = "<group>"; };
+		6DEF2BFA2714BBF800C841AA /* PizzasViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzasViewModel.swift; sourceTree = "<group>"; };
+		6DEF2BFE2714CB7C00C841AA /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		6DEF2C012714CF6000C841AA /* Ingridient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingridient.swift; sourceTree = "<group>"; };
+		6DEF2C032714CF9C00C841AA /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
+		6DEF2C062714CFBC00C841AA /* Pizza.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pizza.swift; sourceTree = "<group>"; };
+		6DEF2C082714D07100C841AA /* PizzaResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaResponse.swift; sourceTree = "<group>"; };
+		6DEF2C0D271575D700C841AA /* PizzaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaService.swift; sourceTree = "<group>"; };
+		6DEF2C0F27157F2E00C841AA /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
+		6DEF2C132715905400C841AA /* Resolver+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resolver+Extensions.swift"; sourceTree = "<group>"; };
+		6DEF2C15271597D600C841AA /* PizzaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaCell.swift; sourceTree = "<group>"; };
+		6DEF2C1727159A6B00C841AA /* PizzaCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaCellViewModel.swift; sourceTree = "<group>"; };
+		97A9B0D24A0DCA7596D995C6 /* Pods-NennosPizza.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NennosPizza.debug.xcconfig"; path = "Target Support Files/Pods-NennosPizza/Pods-NennosPizza.debug.xcconfig"; sourceTree = "<group>"; };
+		ADAE40AE3AAA512A099FECAA /* Pods_NennosPizza.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NennosPizza.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCD9DEE49B5D760B97A68729 /* Pods-NennosPizza.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NennosPizza.release.xcconfig"; path = "Target Support Files/Pods-NennosPizza/Pods-NennosPizza.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6DEF2BC32714820A00C841AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A6BC68119D04E83275B8D57 /* Pods_NennosPizza.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		32995B0DA0BA6AECB98ECEEC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADAE40AE3AAA512A099FECAA /* Pods_NennosPizza.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6D88E4C92721E7DE00925AA6 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				6D88E4CA2721E7FE00925AA6 /* CartViewController.swift */,
+				6D88E4CF2722018800925AA6 /* CartViewModel.swift */,
+				6D88E4E327248DBB00925AA6 /* CartItemCell.swift */,
+				6D88E4EA2726AFB300925AA6 /* CartItemCellViewModel.swift */,
+				6D30ABAA272EA0BB0017045B /* CartTotalCellViewModel.swift */,
+				6D30ABAC272EAA480017045B /* CartTotalCell.swift */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		6D88E4CC2721F5BB00925AA6 /* Drinks */ = {
+			isa = PBXGroup;
+			children = (
+				6D88E4CD2721F5E500925AA6 /* DrinksViewController.swift */,
+				6D88E4D1272207D000925AA6 /* DrinksViewModel.swift */,
+				6D88E4D32722098700925AA6 /* DrinkCell.swift */,
+				6D88E4E82726A6FD00925AA6 /* DrinkCellViewModel.swift */,
+			);
+			path = Drinks;
+			sourceTree = "<group>";
+		};
+		6D88E4D727229DC400925AA6 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				6D88E4D927229EFF00925AA6 /* PizzaObject.swift */,
+				6D88E4DB2722A01C00925AA6 /* DrinkObject.swift */,
+				6D88E4E12722A7C100925AA6 /* CartObject.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		6D88E4D827229DCE00925AA6 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				6DEF2C012714CF6000C841AA /* Ingridient.swift */,
+				6DEF2C032714CF9C00C841AA /* Drink.swift */,
+				6DEF2C062714CFBC00C841AA /* Pizza.swift */,
+				6DEF2C082714D07100C841AA /* PizzaResponse.swift */,
+				6DEF2C0F27157F2E00C841AA /* Cart.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		6D88E4E52724AD6D00925AA6 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				6D88E4E62724ADF500925AA6 /* ItemCell.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		6DA0529A27198C0500CF0BA2 /* PizzaDetails */ = {
+			isa = PBXGroup;
+			children = (
+				6DA0529B271990E100CF0BA2 /* PizzaDetailsViewController.swift */,
+				6DA0529D2719919600CF0BA2 /* PizzaDetailsViewModel.swift */,
+				6DA0529F271AA38500CF0BA2 /* PizzaIngridientCell.swift */,
+				6DD88C9D271AAC1C00782CD0 /* PizzaIngrideintViewModel.swift */,
+				6DD88C9F271AD91400782CD0 /* PizzaImageCell.swift */,
+				6D88E4A327203A8C00925AA6 /* IngridientsHeaderView.swift */,
+			);
+			path = PizzaDetails;
+			sourceTree = "<group>";
+		};
+		6DEF2BBD2714820900C841AA = {
+			isa = PBXGroup;
+			children = (
+				6DEF2BF42714AD8200C841AA /* swiftgen.yml */,
+				6DEF2BC82714820A00C841AA /* NennosPizza */,
+				6DEF2BC72714820A00C841AA /* Products */,
+				76E85EA605B2A597B259A246 /* Pods */,
+				32995B0DA0BA6AECB98ECEEC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6DEF2BC72714820A00C841AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6DEF2BC62714820A00C841AA /* NennosPizza.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6DEF2BC82714820A00C841AA /* NennosPizza */ = {
+			isa = PBXGroup;
+			children = (
+				6D88E4E52724AD6D00925AA6 /* UI */,
+				6DEF2C0C2715757100C841AA /* Service */,
+				6DEF2C002714CE1200C841AA /* Model */,
+				6DEF2BF72714BAE500C841AA /* Extensions */,
+				6DEF2BEB2714A8B100C841AA /* Resources */,
+				6DEF2BE62714A26C00C841AA /* Generated */,
+				6DEF2BDF271496D200C841AA /* Application */,
+				6DEF2BE2271499A600C841AA /* Scenes */,
+			);
+			path = NennosPizza;
+			sourceTree = "<group>";
+		};
+		6DEF2BDF271496D200C841AA /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				6DEF2BE02714971400C841AA /* AppCoordinator.swift */,
+				6DEF2BC92714820A00C841AA /* AppDelegate.swift */,
+				6DEF2BCB2714820A00C841AA /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		6DEF2BE2271499A600C841AA /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				6D88E4CC2721F5BB00925AA6 /* Drinks */,
+				6D88E4C92721E7DE00925AA6 /* Cart */,
+				6DA0529A27198C0500CF0BA2 /* PizzaDetails */,
+				6DEF2BF62714B26700C841AA /* Pizzas */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		6DEF2BE62714A26C00C841AA /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				6DEF2BE72714A47800C841AA /* Assets.swift */,
+				6DEF2BE82714A47800C841AA /* Strings.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		6DEF2BEB2714A8B100C841AA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6DEF2BD42714820E00C841AA /* LaunchScreen.storyboard */,
+				6DEF2BD72714820E00C841AA /* Info.plist */,
+				6DEF2BEC2714A90E00C841AA /* en.lproj */,
+				6DEF2BFE2714CB7C00C841AA /* Color.xcassets */,
+				6DEF2BD22714820E00C841AA /* Image.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6DEF2BEC2714A90E00C841AA /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				6DEF2BED2714A93B00C841AA /* Localization.strings */,
+			);
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+		6DEF2BF62714B26700C841AA /* Pizzas */ = {
+			isa = PBXGroup;
+			children = (
+				6DEF2BE3271499F800C841AA /* PizzasViewController.swift */,
+				6DEF2BFA2714BBF800C841AA /* PizzasViewModel.swift */,
+				6DEF2C15271597D600C841AA /* PizzaCell.swift */,
+				6DEF2C1727159A6B00C841AA /* PizzaCellViewModel.swift */,
+			);
+			path = Pizzas;
+			sourceTree = "<group>";
+		};
+		6DEF2BF72714BAE500C841AA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6DEF2BF82714BB0000C841AA /* NSLayoutConstraint+Extensions.swift */,
+				6DEF2C132715905400C841AA /* Resolver+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6DEF2C002714CE1200C841AA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6D88E4D827229DCE00925AA6 /* Domain */,
+				6D88E4D727229DC400925AA6 /* Realm */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6DEF2C0C2715757100C841AA /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				6DEF2C0D271575D700C841AA /* PizzaService.swift */,
+				6D88E4D527229D3F00925AA6 /* CartService.swift */,
+				6D88E4DD2722A25900925AA6 /* CartRepository.swift */,
+				6D88E4DF2722A64400925AA6 /* RealmService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		76E85EA605B2A597B259A246 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				97A9B0D24A0DCA7596D995C6 /* Pods-NennosPizza.debug.xcconfig */,
+				FCD9DEE49B5D760B97A68729 /* Pods-NennosPizza.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6DEF2BC52714820A00C841AA /* NennosPizza */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DEF2BDA2714820E00C841AA /* Build configuration list for PBXNativeTarget "NennosPizza" */;
+			buildPhases = (
+				6E230141AB24C0E5483DFEB0 /* [CP] Check Pods Manifest.lock */,
+				6DEF2BC22714820A00C841AA /* Sources */,
+				6DEF2BC32714820A00C841AA /* Frameworks */,
+				6DEF2BC42714820A00C841AA /* Resources */,
+				6DEF2BDE27148C8B00C841AA /* Swiftlint */,
+				2398B2938C46F2B9CF7C5C51 /* [CP] Embed Pods Frameworks */,
+				6DEF2BF52714AF1100C841AA /* SwiftGen */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NennosPizza;
+			productName = NennosPizza;
+			productReference = 6DEF2BC62714820A00C841AA /* NennosPizza.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6DEF2BBE2714820900C841AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					6DEF2BC52714820A00C841AA = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 6DEF2BC12714820900C841AA /* Build configuration list for PBXProject "NennosPizza" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6DEF2BBD2714820900C841AA;
+			productRefGroup = 6DEF2BC72714820A00C841AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6DEF2BC52714820A00C841AA /* NennosPizza */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6DEF2BC42714820A00C841AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DEF2BD62714820E00C841AA /* LaunchScreen.storyboard in Resources */,
+				6DEF2BFF2714CB7C00C841AA /* Color.xcassets in Resources */,
+				6DEF2BEF2714A93B00C841AA /* Localization.strings in Resources */,
+				6DEF2BD32714820E00C841AA /* Image.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2398B2938C46F2B9CF7C5C51 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NennosPizza/Pods-NennosPizza-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NennosPizza/Pods-NennosPizza-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NennosPizza/Pods-NennosPizza-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DEF2BDE27148C8B00C841AA /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		6DEF2BF52714AF1100C841AA /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "Pods/SwiftGen/bin/swiftgen\n";
+		};
+		6E230141AB24C0E5483DFEB0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NennosPizza-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6DEF2BC22714820A00C841AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DD88CA0271AD91400782CD0 /* PizzaImageCell.swift in Sources */,
+				6D88E4E02722A64400925AA6 /* RealmService.swift in Sources */,
+				6DA052A0271AA38500CF0BA2 /* PizzaIngridientCell.swift in Sources */,
+				6D88E4CE2721F5E500925AA6 /* DrinksViewController.swift in Sources */,
+				6DEF2BE12714971400C841AA /* AppCoordinator.swift in Sources */,
+				6D88E4EB2726AFB300925AA6 /* CartItemCellViewModel.swift in Sources */,
+				6DEF2BF92714BB0000C841AA /* NSLayoutConstraint+Extensions.swift in Sources */,
+				6D88E4D2272207D000925AA6 /* DrinksViewModel.swift in Sources */,
+				6D88E4CB2721E7FE00925AA6 /* CartViewController.swift in Sources */,
+				6D88E4DA27229EFF00925AA6 /* PizzaObject.swift in Sources */,
+				6DEF2BE4271499F800C841AA /* PizzasViewController.swift in Sources */,
+				6DEF2C1027157F2E00C841AA /* Cart.swift in Sources */,
+				6D30ABAD272EAA480017045B /* CartTotalCell.swift in Sources */,
+				6DEF2C1827159A6B00C841AA /* PizzaCellViewModel.swift in Sources */,
+				6D88E4D42722098700925AA6 /* DrinkCell.swift in Sources */,
+				6DA0529E2719919600CF0BA2 /* PizzaDetailsViewModel.swift in Sources */,
+				6DEF2BCA2714820A00C841AA /* AppDelegate.swift in Sources */,
+				6DEF2C0E271575D700C841AA /* PizzaService.swift in Sources */,
+				6D88E4DC2722A01C00925AA6 /* DrinkObject.swift in Sources */,
+				6DEF2C142715905400C841AA /* Resolver+Extensions.swift in Sources */,
+				6DA0529C271990E100CF0BA2 /* PizzaDetailsViewController.swift in Sources */,
+				6D88E4D627229D3F00925AA6 /* CartService.swift in Sources */,
+				6D88E4E72724ADF500925AA6 /* ItemCell.swift in Sources */,
+				6DEF2C072714CFBC00C841AA /* Pizza.swift in Sources */,
+				6DEF2C16271597D600C841AA /* PizzaCell.swift in Sources */,
+				6D88E4D02722018800925AA6 /* CartViewModel.swift in Sources */,
+				6DEF2C022714CF6000C841AA /* Ingridient.swift in Sources */,
+				6D88E4E22722A7C100925AA6 /* CartObject.swift in Sources */,
+				6D88E4A427203A8C00925AA6 /* IngridientsHeaderView.swift in Sources */,
+				6DEF2BE92714A47800C841AA /* Assets.swift in Sources */,
+				6D88E4DE2722A25900925AA6 /* CartRepository.swift in Sources */,
+				6D30ABAB272EA0BB0017045B /* CartTotalCellViewModel.swift in Sources */,
+				6DEF2C092714D07100C841AA /* PizzaResponse.swift in Sources */,
+				6DEF2BFB2714BBF800C841AA /* PizzasViewModel.swift in Sources */,
+				6DEF2BEA2714A47800C841AA /* Strings.swift in Sources */,
+				6DEF2C042714CF9C00C841AA /* Drink.swift in Sources */,
+				6D88E4E427248DBB00925AA6 /* CartItemCell.swift in Sources */,
+				6DEF2BCC2714820A00C841AA /* SceneDelegate.swift in Sources */,
+				6DD88C9E271AAC1C00782CD0 /* PizzaIngrideintViewModel.swift in Sources */,
+				6D88E4E92726A6FD00925AA6 /* DrinkCellViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6DEF2BD42714820E00C841AA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DEF2BD52714820E00C841AA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		6DEF2BED2714A93B00C841AA /* Localization.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DEF2BEE2714A93B00C841AA /* en */,
+			);
+			name = Localization.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6DEF2BD82714820E00C841AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6DEF2BD92714820E00C841AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6DEF2BDB2714820E00C841AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97A9B0D24A0DCA7596D995C6 /* Pods-NennosPizza.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KMU6VV9XR5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NennosPizza/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = GK.NennosPizza;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6DEF2BDC2714820E00C841AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCD9DEE49B5D760B97A68729 /* Pods-NennosPizza.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KMU6VV9XR5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NennosPizza/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = GK.NennosPizza;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6DEF2BC12714820900C841AA /* Build configuration list for PBXProject "NennosPizza" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DEF2BD82714820E00C841AA /* Debug */,
+				6DEF2BD92714820E00C841AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DEF2BDA2714820E00C841AA /* Build configuration list for PBXNativeTarget "NennosPizza" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DEF2BDB2714820E00C841AA /* Debug */,
+				6DEF2BDC2714820E00C841AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6DEF2BBE2714820900C841AA /* Project object */;
+}

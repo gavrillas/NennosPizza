@@ -1,0 +1,12 @@
+strings:
+  inputs: NennosPizza/Resources/en.lproj/Localization.strings
+  outputs:
+      params:
+        enumName: Txt
+      templateName: structured-swift5
+      output: NennosPizza/Generated/Strings.swift
+xcassets:
+  inputs: NennosPizza/Resources/
+  outputs:
+    - templateName: swift5
+      output: NennosPizza/Generated/Assets.swift
